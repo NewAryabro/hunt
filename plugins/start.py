@@ -87,7 +87,19 @@ async def start_command(client: Client, message: Message):
                 asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
                 return
     else:
-        buttons = [[InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data = "about"), InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id = client.owner)]]
+        buttons = [
+    [
+        InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"),
+        InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id=client.owner)
+    ],
+    [
+        InlineKeyboardButton("『 Mᴀɪɴ Cʜᴀɴɴᴇʟ 』", url="https://t.me/Animes2u"),
+        InlineKeyboardButton("『 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ 』", url="https://t.me/Animes3u")
+    ],
+    [
+        InlineKeyboardButton("✦ Pᴀɪᴅ Pʀᴏᴍᴏᴛɪᴏɴ ✦", url="https://t.me/Animes2u_Professor_Bot")
+    ]
+        ]
         if user_id in client.admins:
             buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
         photo = client.messages.get("START_PHOTO", "")
