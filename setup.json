@@ -1,24 +1,24 @@
 [
     {
         "session": "ses",
-        "token": "764xxxx91:AAFEm1xxxxxxz5txhxgmk",
-        "api_id": "26xxxx00",
-        "api_hash": "9ea494xxxxxxxxxxx4bbd",
+        "token": "7731987434:AAGzT3eJZN0rd48VuyStjY-Dph26pDLoYT0",
+        "api_id": "22922577",
+        "api_hash": "7764149098:AAGJ-7HQJ_deD4X2O6m7AZYMRsrhd-GOjDY",
         "workers": 8,
-        "db_uri": "mongodb+srv://Clustexxxxxxxxxxx.net/?retryWrites=true&w=majority&appName=Cluster0",
-        "db_name": "name",
-        "fsubs": [[-1002074478106, true, 5]],
-        "db": -1002074478106,
+        "db_uri": "mongodb+srv://autorename:autorename@cluster0.lnz3gyj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "db_name": "Luffy",
+        "fsubs": [[-1002358532189, true, 5]],
+        "db": -1002358588449,
         "auto_del": 0,
         "messages": {
             "START": "<blockquote expandable>__Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit sed.\nVivamus luctus urna sed urna.\nCurabitur blandit tempus porttitor.\nNullam quis risus eget urna.__</blockquote>",
             "FSUB": "",
             "ABOUT": "ABOUT MSG",
             "REPLY": "reply_text",
-            "START_PHOTO": "",
-            "FSUB_PHOTO": ""
+            "START_PHOTO": "https://i.ibb.co/SwjYgtDN/84b9c86dcd7d.jpg",
+            "FSUB_PHOTO": "https://i.ibb.co/0VCL73Yd/7636012dd8f6.jpg"
         },
-        "admins": [78324663, 73468932],
+        "admins": [1077880102 , 1074804932],
         "disable_btn": true,
         "protect": false
     }
