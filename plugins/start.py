@@ -86,8 +86,14 @@ async def start_command(client: Client, message: Message):
                                           text=f'<blockquote><b><i>This File is deleting automatically in {humanize.naturaldelta(client.auto_del)}. Forward in your Saved Messages..!</i></b></blockquote>')
                 asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
                 return
-    else:
-        buttons = [[InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data = "about"), InlineKeyboardButton("『 Mᴀɪɴ Cʜᴀɴɴᴇʟ 』", url=f'https://t.me/Animes2u', InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id = client.owner)]]
+   else:
+    buttons = [
+        [
+            InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"),
+            InlineKeyboardButton("『 Mᴀɪɴ Cʜᴀɴɴᴇʟ 』", url='https://t.me/Animes2u'),
+            InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id=client.owner)
+        ]
+    ]
         if user_id in client.admins:
             buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
         photo = client.messages.get("START_PHOTO", "")
