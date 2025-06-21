@@ -18,6 +18,7 @@ async def start_command(client: Client, message: Message):
     is_banned = await client.mongodb.is_banned(user_id)
     if is_banned:
         return await message.reply("**You have been banned from using this bot!**")
+    
     text = message.text
     if len(text) > 7:
         try:
@@ -44,6 +45,7 @@ async def start_command(client: Client, message: Message):
             except Exception as e:
                 client.LOGGER(__name__, client.name).warning(f"Error decoding ID: {e}")
                 return
+        
         temp_msg = await message.reply("Wait A Sec..")
         
         try:
@@ -64,7 +66,6 @@ async def start_command(client: Client, message: Message):
             caption = (client.messages.get('CAPTION', '').format(previouscaption=msg.caption.html if msg.caption else msg.document.file_name) if bool(client.messages.get('CAPTION', '')) and bool(msg.document)
                        else ("" if not msg.caption else msg.caption.html))
 
-
             reply_markup = msg.reply_markup if not client.disable_btn else None
 
             try:
@@ -79,73 +80,59 @@ async def start_command(client: Client, message: Message):
             except Exception as e:
                 client.LOGGER(__name__, client.name).warning(f"Failed to send message: {e}")
                 pass
-# inside your function or handler:
-if messages:
-    if client.auto_del > 0:
-        enter = text
-        k = await client.send_message(
-            chat_id=message.from_user.id, 
-            text=f'<blockquote><b><i>This File is deleting automatically in {humanize.naturaldelta(client.auto_del)}. Forward in your Saved Messages..!</i></b></blockquote>'
-        )
-        asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
-        return
-else:
-    buttons = [
-        [
-            InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"),
-            InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id=client.owner)
-        ],
-        [
-            InlineKeyboardButton("『 Mᴀɪɴ Cʜᴀɴɴᴇʟ 』", url="https://t.me/Animes2u"),
-            InlineKeyboardButton("『 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ 』", url="https://t.me/Animes3u")
-        ],
-        [
-            InlineKeyboardButton("✦ Pᴀɪᴅ Pʀᴏᴍᴏᴛɪᴏɴ ✦", url="https://t.me/Animes2u_Professor_Bot")
-        ]
-    ]
 
-    # Insert the Settings button if the user is an admin
-    if user_id in client.admins:
-        buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
-
-    photo = client.messages.get("START_PHOTO", "")
-    if photo:
-        await client.send_photo(
-            chat_id=message.chat.id,
-            photo=photo,
-            caption=client.messages.get('START', 'No Start Msg').format(
-                first=message.from_user.first_name,
-                last=message.from_user.last_name,
-                username=None if not message.from_user.username else '@' + message.from_user.username,
-                mention=message.from_user.mention,
-                id=message.from_user.id
-            ),
-            reply_markup=InlineKeyboardMarkup(buttons)
-        )
-    else:
-        await client.send_message(
-            chat_id=message.chat.id,
-            text=client.messages.get('START', 'No Start Msg').format(
-                first=message.from_user.first_name,
-                last=message.from_user.last_name,
-                username=None if not message.from_user.username else '@' + message.from_user.username,
-                mention=message.from_user.mention,
-                id=message.from_user.id
-            ),
-            reply_markup=InlineKeyboardMarkup(buttons)
-        )
+        if messages:
+            if client.auto_del > 0:
+                enter = text
+                k = await client.send_message(
+                    chat_id=message.from_user.id, 
+                    text=f'<blockquote><b><i>This File is deleting automatically in {humanize.naturaldelta(client.auto_del)}. Forward in your Saved Messages..!</i></b></blockquote>'
+                )
+                asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
+                return
         else:
-            await client.send_message(
-                chat_id=message.chat.id,
-                text=client.messages.get('START', 'No Start Message').format(
-                    first=message.from_user.first_name,
-                    last=message.from_user.last_name,
-                    username=None if not message.from_user.username else '@' + message.from_user.username,
-                    mention=message.from_user.mention,
-                    id=message.from_user.id
-                        
-                ),
-                message_effect_id=MSG_EFFECT,
-                reply_markup=InlineKeyboardMarkup(buttons)
-            )
+            buttons = [
+                [
+                    InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"),
+                    InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id=client.owner)
+                ],
+                [
+                    InlineKeyboardButton("『 Mᴀɪɴ Cʜᴀɴɴᴇʟ 』", url="https://t.me/Animes2u"),
+                    InlineKeyboardButton("『 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ 』", url="https://t.me/Animes3u")
+                ],
+                [
+                    InlineKeyboardButton("✦ Pᴀɪᴅ Pʀᴏᴍᴏᴛɪᴏɴ ✦", url="https://t.me/Animes2u_Professor_Bot")
+                ]
+            ]
+
+            # Insert the Settings button if the user is an admin
+            if user_id in client.admins:
+                buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
+
+            photo = client.messages.get("START_PHOTO", "")
+            if photo:
+                await client.send_photo(
+                    chat_id=message.chat.id,
+                    photo=photo,
+                    caption=client.messages.get('START', 'No Start Msg').format(
+                        first=message.from_user.first_name,
+                        last=message.from_user.last_name,
+                        username=None if not message.from_user.username else '@' + message.from_user.username,
+                        mention=message.from_user.mention,
+                        id=message.from_user.id
+                    ),
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
+            else:
+                await client.send_message(
+                    chat_id=message.chat.id,
+                    text=client.messages.get('START', 'No Start Msg').format(
+                        first=message.from_user.first_name,
+                        last=message.from_user.last_name,
+                        username=None if not message.from_user.username else '@' + message.from_user.username,
+                        mention=message.from_user.mention,
+                        id=message.from_user.id
+                    ),
+                    reply_markup=InlineKeyboardMarkup(buttons)
+                )
         return
