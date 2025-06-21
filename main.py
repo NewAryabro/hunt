@@ -6,23 +6,9 @@ from pyrogram import compose
 
 # Static default fallback message templates (can be overridden per setup entry if needed)
 default_messages = {
-    'START': "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ're ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ .</b></blockquote>\n\n"
-         "<blockquote expandable><b>I'm 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ, ʙᴜɪʟᴛ ᴛᴏ ʀᴜʟᴇ ᴛʜᴇ 𝐒ʜᴀᴅᴏᴡ Rᴇᴀʟᴍ 🖤\n\n"
-         "‣ 🔱 Sᴛᴏʀᴇ & Sʜᴀʀᴇ Fɪʟᴇs ᴡɪᴛʜ ᴀ Sɪɴɢʟᴇ Cʟɪᴄᴋ.\n"
-         "‣ 🛡️ Iɴꜰɪɴɪᴛᴇ Fɪʟᴇ Mᴀɴᴀɢᴇᴍᴇɴᴛ Sʏꜱᴛᴇᴍ.\n"
-         "‣ 📂 Pᴏsᴛ Fɪʟᴇs ɪɴ 𝐀ɴɪᴍᴇ Mᴏɴᴀʀᴄʜ 👑 Tᴇᴍᴘʟᴀᴛᴇ.\n\n"
-         "𝐍ᴏᴡ, 𝐓ʜᴇ Fɪʟᴇ Rᴇᴀʟᴍ Iꜱ Uɴᴅᴇʀ Mʏ Cᴏɴᴛʀᴏʟ .\n\n"
-         "𝐀ʀᴇ Yᴏᴜ Rᴇᴀᴅʏ ᴛᴏ Dᴏᴍɪɴᴀᴛᴇ, {mention}-Sᴀᴍᴀ? 👑</b></blockquote>",
+    'START': '<blockquote expandable>__Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit sed.\nVivamus luctus urna sed urna.\nCurabitur blandit tempus porttitor.\nNullam quis risus eget urna.__</blockquote>',
     'FSUB': '',
-    'ABOUT': 'client.messages.get('ABOUT', 'No Start Message').format(
-    owner_id=client.owner,
-    bot_username=client.username,
-    first=query.from_user.first_name,
-    last=query.from_user.last_name,
-    username=None if not query.from_user.username else '@' + query.from_user.username,
-    mention=query.from_user.mention,
-    id=query.from_user.id
-)',
+    'ABOUT': 'ABOUT MSG',
     'REPLY': 'reply_text',
     'START_PHOTO': '',
     'FSUB_PHOTO': ''
