@@ -3,7 +3,7 @@
         "session": "ses",
         "token": "7731987434:AAGzT3eJZN0rd48VuyStjY-Dph26pDLoYT0",
         "api_id": "22922577",
-        "api_hash": "7764149098:AAGJ-7HQJ_deD4X2O6m7AZYMRsrhd-GOjDY",
+        "api_hash": "ff5513f0b7e10b92a940bd107e1ac32a",
         "workers": 8,
         "db_uri": "mongodb+srv://autorename:autorename@cluster0.lnz3gyj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Luffy",
