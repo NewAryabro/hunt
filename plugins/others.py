@@ -5,7 +5,10 @@ from config import MSG_EFFECT
 
 @Client.on_callback_query(filters.regex('^home$'))
 async def home(client: Client, query: CallbackQuery):
-    buttons = [[InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data = "about"), InlineKeyboardButton("✌️ ᴏᴡɴᴇʀ ✌️", user_id = client.owner)]]
+    buttons = [ [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/Animes2u")],
+    [InlineKeyboardButton("🌀 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ", url="https://t.me/Animes3u")],
+    [InlineKeyboardButton("💰 Pᴀɪᴅ Pʀᴏᴍᴏᴛɪᴏɴ", url="https://t.me/Animes2u_Professor_Bot")],
+    [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"), InlineKeyboardButton("👑 ᴏᴡɴᴇʀ 👑", user_id=client.owner)]]
     if query.from_user.id in client.admins:
         buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
     await query.message.edit_text(
