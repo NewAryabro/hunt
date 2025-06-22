@@ -61,8 +61,13 @@ async def start_command(client: Client, message: Message):
         yugen_msgs = []
 
         for msg in messages:
-            caption = (client.messages.get('CAPTION', '').format(previouscaption=msg.caption.html if msg.caption else msg.document.file_name) if bool(client.messages.get('CAPTION', '')) and bool(msg.document)
-                       else ("" if not msg.caption else msg.caption.html))
+            caption = (
+    client.messages.get('CAPTION', '').format(
+        previouscaption=f"<blockquote>{msg.caption.html}</blockquote>" if msg.caption else f"<blockquote>{msg.document.file_name}</blockquote>"
+    )
+    if bool(client.messages.get('CAPTION', '')) and bool(msg.document)
+    else ("" if not msg.caption else f"<blockquote>{msg.caption.html}</blockquote>")
+)
 
 
             reply_markup = msg.reply_markup if not client.disable_btn else None
