@@ -88,7 +88,7 @@ async def start_command(client: Client, message: Message):
             if client.auto_del > 0:
                 enter = text
                 k = await client.send_message(chat_id=message.from_user.id, 
-                                          text=f'<b><i>This File is deleting automatically in {humanize.naturaldelta(client.auto_del)}. Forward in your Saved Messages..! 💬 𝗖𝗵𝗮𝘁: @WeebChat2u </i></b>')
+                                          text=f'<b><i>This File is deleting automatically in {humanize.naturaldelta(client.auto_del)}. Forward in your Saved Messages..!                          💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁: @WeebChat2u </i></b>')
                 asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
                 return
     else:
