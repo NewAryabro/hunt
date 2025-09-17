@@ -95,7 +95,7 @@ async def start_command(client: Client, message: Message):
         buttons = [
     [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/Animes2u")],
     [InlineKeyboardButton("🌀 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ", url="https://t.me/Animes3u")],
-    [InlineKeyboardButton("💰 Pᴀɪᴅ Pʀᴏᴍᴏᴛɪᴏɴ", url="https://t.me/Animes2u_Professor_Bot")],
+    [InlineKeyboardButton("💰 Pᴀɪᴅ Pʀᴏᴍᴏᴛɪᴏɴ", url="https://t.me/LuffyDSunGodBot")],
     [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"), InlineKeyboardButton("👑 ᴅᴇᴠᴏᴘ 👑", user_id=client.owner)]
 ]
         if user_id in client.admins:
