@@ -21,5 +21,82 @@
         "admins": [1077880102, 1074804932],
         "disable_btn": true,
         "protect": false
+    },
+
+
+    {
+
+        "session": "ses2",
+
+        "token": "7295406763:AAFVrzfokM2fC9LiVstTuuDRyHykVg39hNo",
+
+        "api_id": "22922577",
+
+        "api_hash": "ff5513f0b7e10b92a940bd107e1ac32a",
+
+        "workers": 8,
+
+        "db_uri": "mongodb+srv://srirangasai57:filestore1@cluster0.pnucx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+
+        "db_name": "Cluster0",
+
+        "fsubs": [[-1002358532189, true, 5],[-1001657207796, true, 5],[-1002335038787, true, 5]
+        ],
+
+        "db": -1002201374172,
+
+        "auto_del": 900,
+
+        "messages": {
+
+            "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
+
+            "FSUB": "",
+
+            "ABOUT": "hi",
+
+            "REPLY": "reply_text",
+
+            "START_PHOTO": "https://i.ibb.co/dwmp13HM/e9632829a25c.jpg",
+
+            "FSUB_PHOTO": "https://i.ibb.co/bg0jyyRG/1c7d32489b0b.jpg"
+
+        },
+
+        "admins": [1077880102, 1074804932],
+
+        "disable_btn": true,
+
+        "protect": false
+
+    },
+
+
+
+
+    {
+        "session": "ses3",
+        "token": "8153965988:AAEaPI2LRwJuyjCgqhMuHj7QABlfGiJtXSM",
+        "api_id": "22922577",
+        "api_hash": "ff5513f0b7e10b92a940bd107e1ac32a",
+        "workers": 8,
+        "db_uri": "mongodb+srv://sainallamilli:Filestore1@cluster0.8urcp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "db_name": "Cluster0",
+        "fsubs": [[-1002358532189, true, 5],[-1001657207796, true, 5],[-1002335038787, true, 5]],
+        "db": -1002358588449,
+        "auto_del": 900,
+        "messages": {
+            "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
+            "FSUB": "",
+            "ABOUT": "hi",
+            "REPLY": "reply_text",
+            "START_PHOTO": "https://i.ibb.co/KxCbhbKJ/0dcb2995e41b.jpg",
+            "FSUB_PHOTO": "https://i.ibb.co/mFzBtH3v/7ddf6b8bab7a.jpg"
+        },
+        "admins": [1077880102, 1074804932],
+        "disable_btn": true,
+        "protect": false
     }
 ]
+
+
