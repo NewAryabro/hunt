@@ -7,8 +7,7 @@ from config import MSG_EFFECT
 async def home(client: Client, query: CallbackQuery):
     buttons = [ [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/Animes2u")],
     [InlineKeyboardButton("🌀 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ", url="https://t.me/Animes3u")],
-    [InlineKeyboardButton("💰 Pᴀɪᴅ Pʀᴏᴍᴏᴛɪᴏɴ", url="https://t.me/LuffyDSunGodBot")],
-    [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"), InlineKeyboardButton("👑 ᴅᴇᴠᴏᴘ 👑", user_id=client.owner)]]
+    [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"), InlineKeyboardButton('💰 Pʀᴏᴍᴏ 💰", url="https://t.me/LuffyDSunGodBot)]]
     if query.from_user.id in client.admins:
         buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
     await query.message.edit_text(
@@ -85,4 +84,5 @@ async def unban(client: Client, message: Message):
     except Exception as e:
     
         return await message.reply(f"**Error:** `{e}`")
+
 
