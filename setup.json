@@ -7,12 +7,12 @@
         "workers": 8,
         "db_uri": "mongodb+srv://autorename:autorename@cluster0.lnz3gyj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Luffy",
-        "fsubs": [[-1002358532189, true, 5]],
+        "fsubs": [[-1002358532189, true, 1],[-1001657207796, true, 1],[-1002335038787, true, 1],[-1002656761774, true, 1]],
         "db": -1002358588449,
         "auto_del": 900,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
-            "FSUB": "",
+            "FSUB": "𝗝𝗼𝗶𝗻 𝗔𝗹𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀",
             "ABOUT": "hi",
             "REPLY": "reply_text",
             "START_PHOTO": "https://i.ibb.co/SwjYgtDN/84b9c86dcd7d.jpg",
@@ -40,7 +40,7 @@
 
         "db_name": "Cluster0",
 
-        "fsubs": [[-1002358532189, true, 5],[-1001657207796, true, 5],[-1002335038787, true, 5]
+        "fsubs": [[-1002358532189, true, 1],[-1001657207796, true, 1],[-1002335038787, true, 1],[-1002656761774, true, 1]
         ],
 
         "db": -1002201374172,
@@ -51,7 +51,7 @@
 
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
 
-            "FSUB": "",
+            "FSUB": "𝗝𝗼𝗶𝗻 𝗔𝗹𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀",
 
             "ABOUT": "hi",
 
@@ -82,12 +82,12 @@
         "workers": 8,
         "db_uri": "mongodb+srv://sainallamilli:Filestore1@cluster0.8urcp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Cluster0",
-        "fsubs": [[-1002358532189, true, 5],[-1001657207796, true, 5],[-1002335038787, true, 5]],
+        "fsubs": [[-1002358532189, true, 5],[-1001657207796, true, 5],[-1002656761774, true, 5],[-1002335038787, true, 5]],
         "db": -1002358588449,
         "auto_del": 900,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
-            "FSUB": "",
+            "FSUB": "𝗝𝗼𝗶𝗻 𝗔𝗹𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀",
             "ABOUT": "hi",
             "REPLY": "reply_text",
             "START_PHOTO": "https://i.ibb.co/KxCbhbKJ/0dcb2995e41b.jpg",
@@ -106,13 +106,13 @@
         "workers": 8,
         "db_uri": "mongodb+srv://ygovcu:fY1f9Wovol3NqhUX@cluster0.1mdno.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Cluster0",
-        "fsubs": [[-1002358532189, true, 1],[-1001657207796, true, 1],[-1002335038787, true, 1]
+        "fsubs": [[-1002358532189, true, 1],[-1001657207796, true, 1],[-1002335038787, true, 1],[-1002656761774, true, 1]
         ],
         "db": -1002358588449,
         "auto_del": 900,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
-            "FSUB": "",
+            "FSUB": "𝗝𝗼𝗶𝗻 𝗔𝗹𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀",
             "ABOUT": "hi",
             "REPLY": "reply_text",
             "START_PHOTO": "https://i.ibb.co/SwjYgtDN/84b9c86dcd7d.jpg",
@@ -131,12 +131,12 @@
         "workers": 8,
         "db_uri": "mongodb+srv://gojo:gojo@cluster0.mvxnmjt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Cluster0",
-        "fsubs": [[-1002358532189, true, 5]],
+        "fsubs": [[-1002358532189, true, 1],[-1001657207796, true, 1],[-1002335038787, true, 1],[-1002656761774, true, 1]],
         "db": -1002358588449,
         "auto_del": 900,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
-            "FSUB": "",
+            "FSUB": "𝗝𝗼𝗶𝗻 𝗔𝗹𝗹 𝗖𝗵𝗮𝗻𝗻𝗲𝗹𝘀",
             "ABOUT": "hi",
             "REPLY": "reply_text",
             "START_PHOTO": "https://i.ibb.co/Hf9qz22m/15ece4377c31.jpg",
@@ -147,6 +147,7 @@
         "protect": false
     }
 ]
+
 
 
 
