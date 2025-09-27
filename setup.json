@@ -2,8 +2,8 @@
     {
         "session": "ses",
         "token": "7731987434:AAHJr2-Xsi-ioiDHkJkYyK57TiQjyxWjWFc",
-        "api_id": "25320923",
-        "api_hash": "b3ee9d2000b315b88fa0a9822663b8a",
+        "api_id": "22648485",
+        "api_hash": "8a714c643f86acb3d07a2baa4831f95b",
         "workers": 8,
         "db_uri": "mongodb+srv://autorename:autorename@cluster0.lnz3gyj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Luffy",
@@ -30,9 +30,9 @@
 
         "token": "7295406763:AAFVrzfokM2fC9LiVstTuuDRyHykVg39hNo",
 
-        "api_id": "25320923",
+        "api_id": "22648485",
 
-        "api_hash": "b3ee9d2000b315b88fa0a9822663b8a",
+        "api_hash": "8a714c643f86acb3d07a2baa4831f95b",
 
         "workers": 8,
 
@@ -77,8 +77,8 @@
     {
         "session": "ses3",
         "token": "8153965988:AAEaPI2LRwJuyjCgqhMuHj7QABlfGiJtXSM",
-        "api_id": "25320923",
-        "api_hash": "b3ee9d2000b315b88fa0a9822663b8a",
+        "api_id": "22648485",
+        "api_hash": "8a714c643f86acb3d07a2baa4831f95b",
         "workers": 8,
         "db_uri": "mongodb+srv://sainallamilli:Filestore1@cluster0.8urcp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Cluster0",
@@ -101,8 +101,8 @@
     {
         "session": "ses4",
         "token": "8176887548:AAF8zFkgjVkhAGgELvhuS8sAR2z2R3C4bYM",
-        "api_id": "25320923",
-        "api_hash": "b3ee9d2000b315b88fa0a9822663b8a",
+        "api_id": "22648485",
+        "api_hash": "8a714c643f86acb3d07a2baa4831f95b",
         "workers": 8,
         "db_uri": "mongodb+srv://ygovcu:fY1f9Wovol3NqhUX@cluster0.1mdno.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Cluster0",
@@ -126,8 +126,8 @@
     {
         "session": "ses5",
         "token": "7936612066:AAF016gnYCSGu0y565McVvPbDh4dqYdKEJ8",
-        "api_id": "25320923",
-        "api_hash": "b3ee9d2000b315b88fa0a9822663b8a",
+        "api_id": "22648485",
+        "api_hash": "8a714c643f86acb3d07a2baa4831f95b",
         "workers": 8,
         "db_uri": "mongodb+srv://gojo:gojo@cluster0.mvxnmjt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Cluster0",
@@ -147,6 +147,7 @@
         "protect": false
     }
 ]
+
 
 
 
