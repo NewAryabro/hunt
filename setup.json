@@ -131,7 +131,8 @@
         "workers": 8,
         "db_uri": "mongodb+srv://gojo:gojo@cluster0.mvxnmjt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
         "db_name": "Cluster0",
-        "fsubs": [[-1002358532189, true, 1],[-1001657207796, true, 1],[-1002335038787, true, 1],[-1002656761774, true, 1]],
+        "fsubs": [[-1002358532189, true, 1],[-1001657207796, true, 1],[-1002335038787, true, 1],[-1002656761774, true, 1]
+        ],
         "db": -1002358588449,
         "auto_del": 900,
         "messages": {
@@ -147,6 +148,7 @@
         "protect": false
     }
 ]
+
 
 
 
