@@ -5,8 +5,7 @@ from config import MSG_EFFECT
 
 @Client.on_callback_query(filters.regex('^home$'))
 async def home(client: Client, query: CallbackQuery):
-    buttons = [ [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/Animes2u")],
-    [InlineKeyboardButton("🌀 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ", url="https://t.me/Animes3u")],
+    buttons = [ [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/TeluguFlixs")],
     [InlineKeyboardButton("🫧  Aɴɪᴍᴇ ɪɴᴅᴇx ", url="https://t.me/Animes2u_Index")],
     [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"), InlineKeyboardButton("💰 Pʀᴏᴍᴏ 💰", url="https://t.me/LuffyDSunGodBot")]]
     if query.from_user.id in client.admins:
@@ -85,6 +84,7 @@ async def unban(client: Client, message: Message):
     except Exception as e:
     
         return await message.reply(f"**Error:** `{e}`")
+
 
 
 
