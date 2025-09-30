@@ -8,7 +8,7 @@
         "db_uri": "mongodb+srv://manishiva_db_user:VnRwgrKRluEuv3JA@series.abdobfs.mongodb.net/?retryWrites=true&w=majority&appName=Series",
         "db_name": "series",
         "fsubs": [[-1002358532189, true, 5]],
-        "db": -1002358588449,
+        "db": -1002931981317,
         "auto_del": 450,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
@@ -23,5 +23,6 @@
         "protect": false
     }
 ]
+
 
 
