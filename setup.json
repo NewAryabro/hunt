@@ -7,7 +7,7 @@
         "workers": 8,
         "db_uri": "mongodb+srv://manishiva_db_user:VnRwgrKRluEuv3JA@series.abdobfs.mongodb.net/?retryWrites=true&w=majority&appName=Series",
         "db_name": "series",
-        "fsubs": [[-1002358532189, true, 5]],
+        "fsubs": [[-1002951781271, true, 1]],
         "db": -1002931981317,
         "auto_del": 450,
         "messages": {
@@ -23,6 +23,7 @@
         "protect": false
     }
 ]
+
 
 
 
