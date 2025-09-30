@@ -1,20 +1,20 @@
 [
     {
         "session": "ses",
-        "token": "",
+        "token": "8229098910:AAF09ceuFLvjVTUfonHSs8YL6sokY325f0s",
         "api_id": "22648485",
         "api_hash": "8a714c643f86acb3d07a2baa4831f95b",
         "workers": 8,
-        "db_uri": "",
-        "db_name": "Luffy",
+        "db_uri": "mongodb+srv://manishiva_db_user:VnRwgrKRluEuv3JA@series.abdobfs.mongodb.net/?retryWrites=true&w=majority&appName=Series",
+        "db_name": "series",
         "fsubs": [[-1002358532189, true, 5]],
         "db": -1002358588449,
-        "auto_del": 900,
+        "auto_del": 450,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
-            "FSUB": "",
-            "ABOUT": "hi",
-            "REPLY": "reply_text",
+            "FSUB": "ʜᴇʏ ᴄʜᴏᴛᴜ ɪ ʟɪᴋᴇ ʏᴏᴜʀ sᴍᴀʀᴛɴᴇss ʙᴜᴛ ᴍᴀɪ ᴋʜɪʟᴀᴅɪ ʜᴜ😉",
+            "ABOUT": "ᴛᴇʟᴜɢᴜғʟɪxs ɴᴇᴛᴡᴏʀᴋ",
+            "REPLY": "PSPK",
             "START_PHOTO": "https://i.ibb.co/SwjYgtDN/84b9c86dcd7d.jpg",
             "FSUB_PHOTO": "https://i.ibb.co/0VCL73Yd/7636012dd8f6.jpg"
         },
@@ -23,3 +23,4 @@
         "protect": false
     }
 ]
+
