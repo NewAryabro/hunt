@@ -1,4 +1,4 @@
-#(©)AnimeYugen
+
 
 from aiohttp import web
 from plugins import web_server
@@ -76,7 +76,7 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__, self.name).warning(e)
             self.LOGGER(__name__, self.name).warning(f"Make Sure bot is Admin in DB Channel, and Double check the database channel Value, Current Value {self.db}")
-            self.LOGGER(__name__, self.name).info("\nBot Stopped. Join https://t.me/telegram for support")
+            self.LOGGER(__name__, self.name).info("\nBot Stopped. Join https://t.me/Weebchat2u for support")
             sys.exit()
         self.LOGGER(__name__, self.name).info("Bot Started!!")
         
