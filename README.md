@@ -161,15 +161,3 @@ You’re done!
 
 ---
 
-## 🛒 Purchase Full Source
-
-Want to use or resell this bot?
-
-📩 **Contact [@VOATcb](https://t.me/VOATcb) on Telegram** to purchase the code or for support.
-
----
-
-## 📜 License
-
-This code is proprietary. You are not allowed to redistribute, resell, or publish it without explicit permission from the owner.
-
