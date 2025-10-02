@@ -212,17 +212,18 @@ async def delete_files(messages, client, k, enter):
         await asyncio.sleep(auto_del)
 
         for msg in messages:
-            if msg and msg.chat:
-                try:
-                    await client.delete_messages(chat_id=msg.chat.id, message_ids=[msg.id])
-                except Exception as e:
-                    client.LOGGER(__name__, client.name).warning(f"The attempt to delete the media {getattr(msg, 'id', 'Unknown')} was unsuccessful: {e}")
-            else:
-                client.LOGGER(__name__, client.name).warning("Encountered an empty or deleted message.")
+            # Enhanced null and validity check
+            if not msg or not hasattr(msg, 'chat') or not msg.chat:
+                client.LOGGER(__name__, client.name).warning("Encountered an empty or deleted message. Skipping deletion.")
+                continue
+                
+            try:
+                await client.delete_messages(chat_id=msg.chat.id, message_ids=[msg.id])
+            except Exception as e:
+                client.LOGGER(__name__, client.name).warning(f"The attempt to delete the media {getattr(msg, 'id', 'Unknown')} was unsuccessful: {e}")
         
         command = enter.split(" ")
         command_part = command[1] if len(command) > 1 else None
-        
         
         if command_part:
             button_url = f"https://t.me/{client.username}?start={command_part}"
@@ -233,6 +234,7 @@ async def delete_files(messages, client, k, enter):
             )
         else:
             keyboard = None
+            
     await k.edit_text(
         "<blockquote><b><i>Your Video / File Is Successfully Deleted ✅</i></b></blockquote>",
         reply_markup=keyboard
