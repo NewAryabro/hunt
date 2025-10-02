@@ -74,8 +74,6 @@ async def user_count(client, message):
         today = datetime.now().strftime("%Y-%m-%d")
 
         stats_text = f"""
-📊 **User Statistics**
-
 👥 **Total Users:** `{format_number(active_count)}`
 """
         await message.reply(stats_text)
