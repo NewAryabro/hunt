@@ -132,39 +132,30 @@ async def start_command(client: Client, message: Message):
                 client.LOGGER(__name__, client.name).warning(f"Failed to send message: {e}")
                 pass
         
-
-         if message:
-        if getattr(client, "auto_del", 0) > 0:
-            enter = message.text
-
-            buttons = InlineKeyboardMarkup(
+        if messages:
+            if client.auto_del > 0:
+                enter = text
+                buttons = InlineKeyboardMarkup(
+            [
                 [
-                    [
-                        InlineKeyboardButton(
-                            "🔁 Forward to Saved Messages",
-                            switch_inline_query_current_chat=""
-                        ),
-                        InlineKeyboardButton(
-                            "💬 Join Chat",
-                            url="https://t.me/WeebChat2u"
-                        )
-                    ]
+                    InlineKeyboardButton("🔁 Forward to Saved Messages", switch_inline_query_current_chat=""),
+                    InlineKeyboardButton("💬 Join Chat", url="https://t.me/WeebChat2u")
                 ]
-            )
+            ]
+        )
 
-            k = await client.send_message(
-                chat_id=message.from_user.id,
-                text=(
-                    f"<b><i>This File will delete automatically in "
-                    f"{humanize.naturaldelta(client.auto_del)}."
-                    " Forward to your Saved Messages..!                            "
-                    "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁: @WeebChat2u </i></b>"
-                ),
-                reply_markup=buttons
-            )
-
-            asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
-            return
+        k = await client.send_message(
+            chat_id=message.from_user.id,
+            text=(
+                f"<b><i>This File will delete automatically in "
+                f"{humanize.naturaldelta(client.auto_del)}."
+                " Forward to your Saved Messages..!                            "
+                "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁: @WeebChat2u </i></b>"
+            ),
+            reply_markup=buttons
+        )
+                asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
+                return
     else:
         buttons = [
             [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/TeluguFlixs")],
