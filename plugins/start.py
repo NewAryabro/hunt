@@ -177,8 +177,8 @@ async def start_command(client: Client, message: Message):
                     text=(
                         f"<b><i>This File will delete automatically in "
                         f"{humanize.naturaldelta(client.auto_del)}."
-                        " Forward to your Saved Messages..!                            "
-                        "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁: @WeebChat2u </i></b>"
+                        " Forward to your Saved Messages..!<br>"
+                        "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁 : @WeebChat2u</i></b>"
                     ),
                     reply_markup=buttons
                 )
