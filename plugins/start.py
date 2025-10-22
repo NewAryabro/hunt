@@ -161,8 +161,8 @@ async def start_command(client: Client, message: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                "🔁 Forward to Saved Messages",
-                                switch_inline_query_current_chat=""
+                                "🔁 FileStream",
+                                 url="https://t.me/AnimesStreamBot"
                             ),
                             InlineKeyboardButton(
                                 "💬 Join Chat",
