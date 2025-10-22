@@ -132,9 +132,8 @@ async def start_command(client: Client, message: Message):
                 client.LOGGER(__name__, client.name).warning(f"Failed to send message: {e}")
                 pass
         
-        from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
- if message:
+         if message:
         if getattr(client, "auto_del", 0) > 0:
             enter = message.text
 
