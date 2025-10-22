@@ -175,10 +175,10 @@ async def start_command(client: Client, message: Message):
                 k = await client.send_message(
                     chat_id=message.from_user.id,
                     text=(
-                        f"<b><i>This File will delete automatically in "
-                        f"{humanize.naturaldelta(client.auto_del)}."
-                        " Forward to your Saved Messages..!<br>"
-                        "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁 : @WeebChat2u</i></b>"
+                      f"<b><i>This File will delete automatically in {humanize.naturaldelta(client.auto_del)}. "
+                      "Forward to your Saved Messages..!<br>"
+                      "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁 : @WeebChat2u</i></b>"
+
                     ),
                     reply_markup=buttons
                 )
