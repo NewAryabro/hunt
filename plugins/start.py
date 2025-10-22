@@ -166,7 +166,6 @@ async def start_command(client: Client, message: Message):
 
             asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
             return
-
     else:
         buttons = [
             [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/TeluguFlixs")],
