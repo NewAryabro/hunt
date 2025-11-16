@@ -160,4 +160,6 @@ python3 main.py
 You’re done!
 
 ---
+https://dashboard.heroku.com/new?template=https://github.com/srnvxs/series
+
 
