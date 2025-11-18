@@ -7,3 +7,5 @@ motor
 markdown
 asyncio
 TgCrypto
+Flask
+gunicorn
