@@ -1,0 +1,62 @@
+{
+  "name": "Shadow Monarch File Sharing Bot",
+  "env": {
+    "SESSION": {
+      "value": "ses"
+    },
+    "TOKEN": {
+      "value": "8229098910:AAF09ceuFLvjVTUfonHSs8YL6sokY325f0s"
+    },
+    "API_ID": {
+      "value": "22648485"
+    },
+    "API_HASH": {
+      "value": "8a714c643f86acb3d07a2baa4831f95b"
+    },
+    "WORKERS": {
+      "value": "8"
+    },
+    "DB_URI": {
+      "value": "mongodb+srv://manishiva_db_user:VnRwgrKRluEuv3JA@series.abdobfs.mongodb.net/?retryWrites=true&w=majority&appName=Series"
+    },
+    "DB_NAME": {
+      "value": "series"
+    },
+    "FSUBS": {
+      "value": "[[-1002951781271, true, 1]]"
+    },
+    "DB": {
+      "value": "-1002931981317"
+    },
+    "AUTO_DEL": {
+      "value": "450"
+    },
+    "START_MESSAGE": {
+      "value": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ..."
+    },
+    "FSUB_MESSAGE": {
+      "value": "ʜᴇʏ ᴄʜᴏᴛᴜ ɪ ʟɪᴋᴇ ʏᴏᴜʀ sᴍᴀʀᴛɴᴇss ʙᴜᴛ ᴍᴀɪ ᴋʜɪʟᴀᴅɪ ʜᴜ😉"
+    },
+    "ABOUT_MESSAGE": {
+      "value": "TELUGUFLIXS Network"
+    },
+    "REPLY_MESSAGE": {
+      "value": "PSPK"
+    },
+    "START_PHOTO": {
+      "value": "https://files.catbox.moe/6ezzzv.jpg"
+    },
+    "FSUB_PHOTO": {
+      "value": "https://files.catbox.moe/e4m9cl.jpg"
+    },
+    "ADMINS": {
+      "value": "1077880102 1074804932"
+    },
+    "DISABLE_BTN": {
+      "value": "true"
+    },
+    "PROTECT": {
+      "value": "false"
+    }
+  }
+}
