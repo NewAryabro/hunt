@@ -1,5 +1,9 @@
 {
-  "name": "Shadow Monarch File Sharing Bot",
+  "name": "luffy",
+  "description": "File Store Bot",
+  "repository": "https://github.com/srnvxs/series.git",
+  "keywords": ["node", "express", "static"],
+
   "env": {
     "SESSION": {
       "value": "ses"
@@ -31,16 +35,16 @@
     "AUTO_DEL": {
       "value": "450"
     },
-    "START_MESSAGE": {
+    "START": {
       "value": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ..."
     },
-    "FSUB_MESSAGE": {
+    "FSUB": {
       "value": "ʜᴇʏ ᴄʜᴏᴛᴜ ɪ ʟɪᴋᴇ ʏᴏᴜʀ sᴍᴀʀᴛɴᴇss ʙᴜᴛ ᴍᴀɪ ᴋʜɪʟᴀᴅɪ ʜᴜ😉"
     },
-    "ABOUT_MESSAGE": {
+    "ABOUT": {
       "value": "TELUGUFLIXS Network"
     },
-    "REPLY_MESSAGE": {
+    "REPLY": {
       "value": "PSPK"
     },
     "START_PHOTO": {
@@ -58,5 +62,11 @@
     "PROTECT": {
       "value": "false"
     }
-  }
+  },
+
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
 }
