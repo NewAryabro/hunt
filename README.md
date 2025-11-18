@@ -1,3 +1,5 @@
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/srnvxs/series)
+
 # 📁 File Store Bot
 
 **File Store Bot** is a lightning-fast, powerful Telegram bot designed to handle file storage, user access control, admin tools, and full customization — all through Telegram UI.
@@ -160,6 +162,6 @@ python3 main.py
 You’re done!
 
 ---
-https://dashboard.heroku.com/new?template=https://github.com/srnvxs/series
+
 
 
