@@ -114,17 +114,26 @@ async def start_command(client: Client, message: Message):
         for msg in messages:
 
             # ============================
-            # Edited caption logic starts
+            # Safe caption logic
             # ============================
-            original_caption = msg.caption.html if msg.caption else msg.document.file_name
+            if msg.caption:
+                original_caption = msg.caption.html
+            elif msg.document:
+                original_caption = msg.document.file_name
+            else:
+                original_caption = "No Caption"
+
+            # Replace @Animes2u → @OtakusFlix
             fixed_caption = original_caption.replace("@Animes2u", "@OtakusFlix")
+
+            # Apply your saved custom caption if exists
             caption_template = client.messages.get('CAPTION', '')
             if caption_template and msg.document:
                 caption = caption_template.format(previouscaption=f"<blockquote>{fixed_caption}</blockquote>")
             else:
                 caption = f"<blockquote>{fixed_caption}</blockquote>"
             # ============================
-            # Edited caption logic ends
+            # End caption logic
             # ============================
 
             reply_markup = msg.reply_markup if not client.disable_btn else None
