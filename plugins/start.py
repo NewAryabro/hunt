@@ -7,11 +7,9 @@ import time
 from collections import defaultdict
 import asyncio
 
-
 user_requests = defaultdict(list)
 RATE_LIMIT_WINDOW = 60
 MAX_REQUESTS_PER_WINDOW = 5
-
 
 def rate_limit(user_id):
     """Check if user has exceeded rate limit"""
@@ -20,24 +18,19 @@ def rate_limit(user_id):
         req_time for req_time in user_requests[user_id]
         if now - req_time < RATE_LIMIT_WINDOW
     ]
-
     if len(user_requests[user_id]) >= MAX_REQUESTS_PER_WINDOW:
         return False
-
     user_requests[user_id].append(now)
     return True
-
 
 def get_remaining_time(user_id):
     """Get remaining time until user can make another request"""
     if user_id not in user_requests or not user_requests[user_id]:
         return 0
-
     now = time.time()
     oldest_request = min(user_requests[user_id])
     next_available = oldest_request + RATE_LIMIT_WINDOW
     return max(0, int(next_available - now))
-
 
 @Client.on_message(filters.command('start') & filters.private)
 @force_sub
@@ -52,8 +45,6 @@ async def start_command(client: Client, message: Message):
             rate_limit_msg = await message.reply(
                 f"**⚠️ Please Wait**\n\n"
                 f"**{readable_time}** before making another request\n"
-                # f"`{MAX_REQUESTS_PER_WINDOW} req/min limit`\n\n"
-                # f"_Auto-deleting in 8s..._"
             )
             await asyncio.sleep(8)
             try:
@@ -121,14 +112,20 @@ async def start_command(client: Client, message: Message):
         yugen_msgs = []
 
         for msg in messages:
-            caption = (
-                client.messages.get('CAPTION', '').format(
-                    previouscaption=f"<blockquote>{msg.caption.html}</blockquote>"
-                    if msg.caption else f"<blockquote>{msg.document.file_name}</blockquote>"
-                )
-                if bool(client.messages.get('CAPTION', '')) and bool(msg.document)
-                else ("" if not msg.caption else f"<blockquote>{msg.caption.html}</blockquote>")
-            )
+
+            # ============================
+            # Edited caption logic starts
+            # ============================
+            original_caption = msg.caption.html if msg.caption else msg.document.file_name
+            fixed_caption = original_caption.replace("@Animes2u", "@OtakusFlix")
+            caption_template = client.messages.get('CAPTION', '')
+            if caption_template and msg.document:
+                caption = caption_template.format(previouscaption=f"<blockquote>{fixed_caption}</blockquote>")
+            else:
+                caption = f"<blockquote>{fixed_caption}</blockquote>"
+            # ============================
+            # Edited caption logic ends
+            # ============================
 
             reply_markup = msg.reply_markup if not client.disable_btn else None
 
@@ -140,6 +137,7 @@ async def start_command(client: Client, message: Message):
                     protect_content=client.protect
                 )
                 yugen_msgs.append(copied_msg)
+
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 copied_msg = await msg.copy(
@@ -149,52 +147,43 @@ async def start_command(client: Client, message: Message):
                     protect_content=client.protect
                 )
                 yugen_msgs.append(copied_msg)
+
             except Exception as e:
                 client.LOGGER(__name__, client.name).warning(f"Failed to send message: {e}")
                 pass
 
         # ✅ Auto-delete notice message
-        if messages:
-            if client.auto_del > 0:
-                enter = text
-                buttons = InlineKeyboardMarkup(
+        if messages and client.auto_del > 0:
+            enter = text
+            buttons = InlineKeyboardMarkup(
+                [
                     [
-                        [
-                            InlineKeyboardButton(
-                                "🔁 FileStream",
-                                 url="https://t.me/AnimesStreamBot"
-                            ),
-                            InlineKeyboardButton(
-                                "💬 Join Chat",
-                                url="https://t.me/WeebChat2u"
-                            )
-                        ]
+                        InlineKeyboardButton("🔁 FileStream", url="https://t.me/AnimesStreamBot"),
+                        InlineKeyboardButton("💬 Join Chat", url="https://t.me/WeebChat2u")
                     ]
-                )
-
-                k = await client.send_message(
-                    chat_id=message.from_user.id,
-                    text=(
-                      f"<b><i>This File will delete automatically in {humanize.naturaldelta(client.auto_del)}. "
-                      "Forward to your Saved Messages..!<br>"
-                      "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁 : @WeebChat2u</i></b>"
-
-                    ),
-                    reply_markup=buttons
-                )
-
-                asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
-                return
+                ]
+            )
+            k = await client.send_message(
+                chat_id=message.from_user.id,
+                text=(
+                    f"<b><i>This File will delete automatically in "
+                    f"{humanize.naturaldelta(client.auto_del)}."
+                    " Forward to your Saved Messages..!                            "
+                    "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁 : @WeebChat2u </i></b>"
+                ),
+                reply_markup=buttons
+            )
+            asyncio.create_task(delete_files(yugen_msgs, client, k, enter))
+            return
 
     # 🏠 Default start message (no argument)
     else:
         buttons = [
-            [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/TeluguFlixs")],
-            [InlineKeyboardButton("🫧  Aɴɪᴍᴇ ɪɴᴅᴇx ", url="https://t.me/Animes2u_Index")],
-            [
-                InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"),
-                InlineKeyboardButton("💰 Pʀᴏᴍᴏ 💰", url="https://t.me/LuffyDSunGodBot")
-            ]
+            [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/OtakusFlix")],
+            [InlineKeyboardButton("🌀 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ", url="https://t.me/Animes3u")],
+            [InlineKeyboardButton("🫧  Aɴɪᴍᴇ ɪɴᴅᴇx ", url="https://t.me/OtakusFlix")],
+            [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"),
+             InlineKeyboardButton("💰 Pʀᴏᴍᴏ 💰", url="https://t.me/LuffyDSunGodBot")]
         ]
 
         if user_id in client.admins:
