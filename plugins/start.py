@@ -167,8 +167,8 @@ async def start_command(client: Client, message: Message):
             buttons = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔁 FileStream", url="https://t.me/AnimesStreamBot"),
-                        InlineKeyboardButton("💬 Join Chat", url="https://t.me/WeebChat2u")
+                        InlineKeyboardButton("💻Oɴʟɪɴᴇ Wᴀᴛᴄʜ", url="https://t.me/Anime_Hunt_Bot"),
+                        InlineKeyboardButton("💬Rᴇᴏ̨ᴜᴇsᴛ Cʜᴀᴛ", url="https://t.me/+DNXq2mO7VLA5NmY1")
                     ]
                 ]
             )
@@ -178,7 +178,7 @@ async def start_command(client: Client, message: Message):
                     f"<b><i>This File will delete automatically in "
                     f"{humanize.naturaldelta(client.auto_del)}."
                     " Forward to your Saved Messages..!                            "
-                    "💬𝗝𝗼𝗶𝗻𝗖𝗵𝗮𝘁 : @WeebChat2u </i></b>"
+                    "\n💬𝙊𝙉𝙇𝙔 𝘼𝘿𝙐𝙇𝙏𝙎 🔞: <a href=https://t.me/+jA8m2116YpEyMjQ1>𝘾𝙇𝙄𝘾𝙆 𝙃𝙀𝙍𝙀</a> </i></b>"
                 ),
                 reply_markup=buttons
             )
@@ -188,11 +188,11 @@ async def start_command(client: Client, message: Message):
     # 🏠 Default start message (no argument)
     else:
         buttons = [
-            [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/OtakusFlix")],
-            [InlineKeyboardButton("🌀 Oɴɢᴏɪɴɢ Aɴɪᴍᴇ", url="https://t.me/Animes3u")],
-            [InlineKeyboardButton("🫧  Aɴɪᴍᴇ ɪɴᴅᴇx ", url="https://t.me/OtakusFlix")],
-            [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"),
-             InlineKeyboardButton("💰 Pʀᴏᴍᴏ 💰", url="https://t.me/LuffyDSunGodBot")]
+            [InlineKeyboardButton("⛩️Mᴀɪɴ Cʜᴀɴɴᴇʟ⛩️", url="https://t.me/Telugu_Movies_999")],
+            [InlineKeyboardButton("🏮Oᴜʀ Oᴛʜᴇʀ Cʜᴀɴɴᴇʟs🏮", url="https://t.me/+3gzUrBQmKGY5ZjU1")],
+            [InlineKeyboardButton("🔞Aᴅᴜʟᴛ Cʜᴀɴɴᴇʟ🔞 ", url="https://t.me/+jA8m2116YpEyMjQ1")],
+            [InlineKeyboardButton("⚠️ Oᴜʀ Bᴏᴛs ⚠️", callback_data="about"),
+             InlineKeyboardButton("💰 Pʀᴏᴍᴏ 💰", url="https://t.me/arya_Bro_Bot")]
         ]
 
         if user_id in client.admins:
