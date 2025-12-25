@@ -167,7 +167,7 @@ async def start_command(client: Client, message: Message):
             buttons = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("💻Oɴʟɪɴᴇ Wᴀᴛᴄʜ", url="https://t.me/Anime_Hunt_Bot"),
+                        InlineKeyboardButton("💻Oɴʟɪɴᴇ Wᴀᴛᴄʜ", url="https://t.me/Arya_Filetolink_bot"),
                         InlineKeyboardButton("💬Rᴇᴏ̨ᴜᴇsᴛ Cʜᴀᴛ", url="https://t.me/+DNXq2mO7VLA5NmY1")
                     ]
                 ]
@@ -178,7 +178,7 @@ async def start_command(client: Client, message: Message):
                     f"<b><i>This File will delete automatically in "
                     f"{humanize.naturaldelta(client.auto_del)}."
                     " Forward to your Saved Messages..!                            "
-                    "\n💬𝙊𝙉𝙇𝙔 𝘼𝘿𝙐𝙇𝙏𝙎 🔞: <a href=https://t.me/+jA8m2116YpEyMjQ1>𝘾𝙇𝙄𝘾𝙆 𝙃𝙀𝙍𝙀</a> </i></b>"
+                    "\n💬𝙊𝙉𝙇𝙔 𝘼𝘿𝙐𝙇𝙏𝙎 🔞: <a href=https://t.me/+sAavjz27WUgwNzBl>𝘾𝙇𝙄𝘾𝙆 𝙃𝙀𝙍𝙀</a> </i></b>"
                 ),
                 reply_markup=buttons
             )
