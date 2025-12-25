@@ -5,9 +5,13 @@ from config import MSG_EFFECT
 
 @Client.on_callback_query(filters.regex('^home$'))
 async def home(client: Client, query: CallbackQuery):
-    buttons = [ [InlineKeyboardButton("📢 Mᴀɪɴ Cʜᴀɴɴᴇʟ", url="https://t.me/TeluguFlixs")],
-    [InlineKeyboardButton("🫧  Aɴɪᴍᴇ ɪɴᴅᴇx ", url="https://t.me/Animes2u_Index")],
-    [InlineKeyboardButton("⚠️ ᴀʙᴏᴜᴛ ⚠️", callback_data="about"), InlineKeyboardButton("💰 Pʀᴏᴍᴏ 💰", url="https://t.me/LuffyDSunGodBot")]]
+    buttons = [
+            [InlineKeyboardButton("⛩️Mᴀɪɴ Cʜᴀɴɴᴇʟ⛩️", url="https://t.me/Telugu_Movies_999")],
+            [InlineKeyboardButton("🏮Oᴜʀ Oᴛʜᴇʀ Cʜᴀɴɴᴇʟs🏮", url="https://t.me/+3gzUrBQmKGY5ZjU1")],
+            [InlineKeyboardButton("🔞Aᴅᴜʟᴛ Cʜᴀɴɴᴇʟ🔞 ", url="https://t.me/+jA8m2116YpEyMjQ1")],
+            [InlineKeyboardButton("⚠️ Oᴜʀ Bᴏᴛs ⚠️", callback_data="about"),
+             InlineKeyboardButton("💰 Pʀᴏᴍᴏ 💰", url="https://t.me/arya_Bro_Bot")]
+        ]
     if query.from_user.id in client.admins:
         buttons.insert(0, [InlineKeyboardButton("⛩️ ꜱᴇᴛᴛɪɴɢꜱ ⛩️", callback_data="settings")])
     await query.message.edit_text(
@@ -84,6 +88,7 @@ async def unban(client: Client, message: Message):
     except Exception as e:
     
         return await message.reply(f"**Error:** `{e}`")
+
 
 
 
