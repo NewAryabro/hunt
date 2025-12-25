@@ -8,7 +8,7 @@
         "db_uri": "mongodb+srv://MarvelAndDc:MarvelAndDc@cluster0.z0uow.mongodb.net/?retryWrites=true&w=majority",
         "db_name": "animehunt",
         "fsubs": [[-1001798300759, true, 1]],
-        "db": -1002370043591,
+        "db": -1003114743011,
         "auto_del": 450,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
@@ -23,6 +23,7 @@
         "protect": false
     }
 ]
+
 
 
 
