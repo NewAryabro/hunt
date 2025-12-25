@@ -5,7 +5,7 @@
         "api_id": "7515868",
         "api_hash": "dbd251e9ad4883b0443cc82b618ac6fa",
         "workers": 8,
-        "db_uri": "mongodb+srv://AnimeCosmo:AnimeCosmo@cluster0.u6rpl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "db_uri": "mongodb+srv://MarvelAndDc:MarvelAndDc@cluster0.z0uow.mongodb.net/?retryWrites=true&w=majority",
         "db_name": "animehunt",
         "fsubs": [[-1001798300759, true, 1]],
         "db": -1002370043591,
@@ -23,6 +23,7 @@
         "protect": false
     }
 ]
+
 
 
 
