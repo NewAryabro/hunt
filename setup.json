@@ -1,14 +1,14 @@
 [
     {
         "session": "ses",
-        "token": "8229098910:AAF09ceuFLvjVTUfonHSs8YL6sokY325f0s",
-        "api_id": "22648485",
-        "api_hash": "8a714c643f86acb3d07a2baa4831f95b",
+        "token": "7937008793:AAF_Al8kXm3T4YKVix6g5teXpQqQ9OoJqFo",
+        "api_id": "7515868",
+        "api_hash": "dbd251e9ad4883b0443cc82b618ac6fa",
         "workers": 8,
-        "db_uri": "mongodb+srv://manishiva_db_user:VnRwgrKRluEuv3JA@series.abdobfs.mongodb.net/?retryWrites=true&w=majority&appName=Series",
-        "db_name": "series",
-        "fsubs": [[-1002951781271, true, 1]],
-        "db": -1002931981317,
+        "db_uri": "mongodb+srv://AnimeCosmo:AnimeCosmo@cluster0.u6rpl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        "db_name": "animehunt",
+        "fsubs": [[-1001798300759, true, 1]],
+        "db": -1002370043591,
         "auto_del": 450,
         "messages": {
             "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I ʜᴏᴘᴇ ʏᴏᴜ'ʀᴇ ғᴇᴇʟɪɴɢ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴏғ 𝐒ʜᴀᴅᴏᴡ Mᴏɴᴀʀᴄʜ 😈.</b></blockquote>\n\n<blockquote expandable><b>I'ᴍ 𝐓ʜᴇ Uʟᴛɪᴍᴀᴛᴇ Fɪʟᴇ Sʜᴀʀɪɴɢ Bᴏᴛ...",
@@ -18,11 +18,12 @@
             "START_PHOTO": "https://files.catbox.moe/6ezzzv.jpg",
             "FSUB_PHOTO": "https://files.catbox.moe/e4m9cl.jpg"
         },
-        "admins": [1077880102, 1074804932],
+        "admins": [6081617163],
         "disable_btn": true,
         "protect": false
     }
 ]
+
 
 
 
