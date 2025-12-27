@@ -13,19 +13,19 @@
       "value": "series"
     },
     "BOT_TOKEN": {
-      "value": "8229098910:AAF09ceuFLvjVTUfonHSs8YL6sokY325f0s"
+      "value": "7937008793:AAF_Al8kXm3T4YKVix6g5teXpQqQ9OoJqFo"
     },
     "API_ID": {
-      "value": "22648485"
+      "value": "7515868"
     },
     "API_HASH": {
-      "value": "8a714c643f86acb3d07a2baa4831f95b"
+      "value": "dbd251e9ad4883b0443cc82b618ac6fa"
     },
     "WORKERS": {
       "value": "8"
     },
     "DB_URI": {
-      "value": "mongodb+srv://manishiva_db_user:VnRwgrKRluEuv3JA@series.abdobfs.mongodb.net/?retryWrites=true&w=majority&appName=Series"
+      "value": "mongodb+srv://AnimeCosmo:AnimeCosmo@cluster0.u6rpl.mongodb.net/?retryWrites=true&w=majority"
     },
     "DB_NAME": {
       "value": "series"
@@ -34,7 +34,7 @@
       "value": "[[-1002951781271, true, 1]]"
     },
     "DB": {
-      "value": "-1002931981317"
+      "value": "-1003114743011"
     },
     "AUTO_DEL": {
       "value": "450"
