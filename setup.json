@@ -21,8 +21,32 @@
         "admins": [6081617163],
         "disable_btn": true,
         "protect": false
+    }, 
+        {
+        "session": "ses2",
+        "token": "7791312497:AAE5YDy-7-0_MpxiNnMgWQpqUm2aS3lQLr8",
+        "api_id": "7515868",
+        "api_hash": "dbd251e9ad4883b0443cc82b618ac6fa",
+        "workers": 8,
+        "db_uri": "mongodb+srv://AnimeCosmo:AnimeCosmo@cluster0.u6rpl.mongodb.net/?retryWrites=true&w=majority",
+        "db_name": "animehunt",
+        "fsubs": [[-1001798300759, true, 1]],
+        "db": -1003114743011,
+        "auto_del": 450,
+        "messages": {
+            "START": "<blockquote><b>Hᴇʏ, {mention}✌🏻.  I'ᴍ ᴀ Pᴠᴛ Fɪʟᴇ Sᴛᴏʀᴇ Bᴏᴛ 😎.</b></blockquote>\n\n<blockquote expandable><b>❓ Hᴏᴡ Tᴏ Usᴇ Mᴇ 🤔❗\n\n- Cʟɪᴄᴋ Start Bᴜᴛᴛᴏɴ  \n- Jᴏɪɴ Aʟʟ Rᴇǫᴜɪʀᴇᴅ Cʜᴀɴɴᴇʟs  \n- Tʀʏ Aɢᴀɪɴ Aғᴛᴇʀ Jᴏɪɴɪɴɢ\n\n❤‍🩹 - @Arya_Bro_Bot\n\n(Dᴍ ᴍᴇ ɪғ ʏᴏᴜ'ʀᴇ ғᴀᴄɪɴɢ ᴀɴʏ ɪssᴜᴇs. Rᴇᴘʟɪᴇs ᴍᴀʏ ᴛᴀᴋᴇ sᴏᴍᴇ ᴛɪᴍᴇ.)</blockquote expandable>",
+            "FSUB": "ʜᴇʏ ᴄʜᴏᴛᴜ ɪ ʟɪᴋᴇ ʏᴏᴜʀ sᴍᴀʀᴛɴᴇss ʙᴜᴛ ᴍᴀɪ ᴋʜɪʟᴀᴅɪ ʜᴜ😉",
+            "ABOUT": "𝙏𝙀𝙇𝙐𝙂𝙐 𝙈𝙊𝙑𝙄𝙀𝙎 999..!!",
+            "REPLY": "Hello",
+            "START_PHOTO": "https://files.catbox.moe/6ezzzv.jpg",
+            "FSUB_PHOTO": "https://files.catbox.moe/e4m9cl.jpg"
+        },
+        "admins": [6081617163],
+        "disable_btn": true,
+        "protect": false
     }
 ]
+
 
 
 
